@@ -1,3 +1,8 @@
+-- Funcional - Primera Clase
+-- Temas:
+-- Introduccion y tipos de datos, pattern matching
+
+
 factorial :: Integer -> Integer
 factorial 0 = 1
 factorial n = n * factorial (n - 1)
@@ -49,13 +54,14 @@ reemplazar reemplazo _ = reemplazo ++ "hola"
 sumarTupla :: (Bool, Bool, Bool) -> Bool
 sumarTupla (x, y, z) = x && not y || x && z
 
-
+-- Aca se usa where para definir variables locales
 -- suma 2 vectores en R2
 sumarVectores :: (Float, Float) -> (Float, Float) -> (Float, Float)
 sumarVectores primerTupla segundaTupla = (primerComponente, segundaComponente)
     where
     primerComponente  = fst primerTupla + fst segundaTupla
     segundaComponente = snd primerTupla + snd segundaTupla
+
 concatenarListas l1 l2 = l1 ++ l2
 concatenarTupla :: (a, b) -> (c, d) -> (a, b, c, d)
 concatenarTupla (x, y) (w, z) = (x, y , w , z)
