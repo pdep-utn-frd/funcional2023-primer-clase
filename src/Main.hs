@@ -47,7 +47,7 @@ reemplazar reemplazo _ = reemplazo ++ "hola"
 
 
 sumarTupla :: (Bool, Bool, Bool) -> Bool
-sumarTupla (x, y, z) = x && (not y) || x && z
+sumarTupla (x, y, z) = x && not y || x && z
 
 
 -- suma 2 vectores en R2
