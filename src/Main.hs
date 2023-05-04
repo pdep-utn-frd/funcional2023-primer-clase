@@ -1,5 +1,5 @@
 -- Funcional - Primera Clase
--- Temas:
+-- Temas de la clase:
 -- Introduccion y tipos de datos, pattern matching
 
 
